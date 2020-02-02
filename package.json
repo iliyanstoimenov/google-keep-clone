@@ -1,22 +1,14 @@
 {
-  "name": "yes",
+  "name": "practice",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server --host=localhost --port=3010 --entry-file=./index.html --quiet"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iliyanstoimenov/google-keep-clone.git"
+    "start": "live-server --host=localhost --port=3010 --entry-file=./index.html --quiet  --mount=/:./src",
+    "build": "gulp build --api=https://fluidci-development.api.web.objectsystems.com && npm run servebuild"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iliyanstoimenov/google-keep-clone/issues"
-  },
-  "homepage": "https://github.com/iliyanstoimenov/google-keep-clone#readme",
   "devDependencies": {
     "live-server": "^1.2.1"
   }
